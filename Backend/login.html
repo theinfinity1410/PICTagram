@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pictagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #FFCCCC;
+            color: black;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.3);
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #8B0000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #600000;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            color: black;
+        }
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .floating-icons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .icon {
+            position: absolute;
+            font-size: 30px;
+            opacity: 0.3;
+            animation: floatAnimation 5s infinite alternate ease-in-out;
+        }
+        @keyframes floatAnimation {
+            from { transform: translateY(0); }
+            to { transform: translateY(20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-icons">
+        <span class="icon" style="top: 10%; left: 20%">📱</span>
+        <span class="icon" style="top: 40%; left: 70%">🔗</span>
+        <span class="icon" style="top: 70%; left: 30%">🚀</span>
+    </div>
+    <div class="container">
+        <h1>Welcome to Pictagram</h1>
+        <a href="https://metamask.io/download/" target="_blank" class="button">Connect Wallet</a>
+        <p style="margin-top: 20px; font-size: 14px; color: black;">
+            <b>If you don't have a MetaMask account, </b><a href="https://metamask.io/download/" target="_blank" style="color: #4CAF50; text-decoration: none;">create one now</a>.
+        </p>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Pictagram. All Rights Reserved.</p>
+        <p><a href="/about">About Us</a> | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+    </div>
+</body>
+</html>
